@@ -14,7 +14,7 @@ public class RideRepoTest {
     @Test
     public void givenUserId_shouldReturnListOfRides() {
         Ride[] userRides = { new Ride(2.0, 5), new Ride(0.1, 1) };
-        String userId = "Mrunal";
+        String userId = "Mrunal08";
         rideRepository.addRides(userId, userRides);
         Ride[] ridesList = rideRepository.getRides(userId);
         Assert.assertEquals(userRides[0], ridesList[0]);
